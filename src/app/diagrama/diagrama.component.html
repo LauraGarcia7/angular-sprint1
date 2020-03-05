@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generador de Equipos</title>
+​
+</head>
+<body style="margin-left: 100px; margin-top: 30px;">
+    <form action="registro">
+        <h1>Analisis de Diagramas</h1>
+        <p>Un   software   que   está   desarrollándose   tiene   4   módulos   llamados   “Comunicación”,  “LeeDatos”,  “DatosGeneral”  y  “DatosClase”.  El  módulo  “DatosClase”  es  un  módulo  fundamental  en  términos  de  la  lógica  del  programa, pero también tiene la complejidad más alta, al igual que una alta probabilidad de que en él se encuentren errores. La relación entre los módulos puede verse en el siguiente diagrama: </p><br>
+
+        <img src="https://raw.githubusercontent.com/LauraGarcia7/Imagenes-Software/master/4.PNG" alt="" width="300">
+
+
+        <p>El encargado del plan de pruebas definió que, después de hacer las pruebas de unidad, se deben realizar pruebas de integración. Considerando la estructura del programa, se debe seleccionar la estrategia de integración:</p>
+
+        <hr>
+        
+    <div class="btn-group">
+        <button type="button" class="btn btn-outline-success" id="btn-1" style="right: 5px; margin-top: 8px;" onclick="prueba()">a) Ascendente,   para   comenzar   con   los   módulos   “DatosGeneral”   y   “DatosClase”.</button>
+    </div><br>
+    <div class="btn-group">
+        <button type="button" class="btn btn-outline-success" id="btn-2" style="right: 5px; margin-top: 8px;">b) Descendente  primero  en  profundidad,  para  integrar  “DatosClase”  justo  antes del último módulo.</button>
+    </div><br>
+    <div class="btn-group">
+        <button type="button" class="btn btn-outline-success" id="btn-3" style="right: 5px; margin-top: 8px;">c) Descendente  primero  en  anchura,  para  dejar  de  último  el  módulo  “DatosClase</button>
+    </div><br>
+    <div class="btn-group">
+        <button type="button" class="btn btn-outline-success" id="btn-4" style="right: 5px; margin-top: 8px;">d) No  incremental,  para  verificar  la  funcionalidad  completa  con  todos  los  módulos de una vez.</button>
+    </div><br>  
+​
+    <h3 id="respuesta" style="margin-left: 120px; margin-top: 10px;"></h3>
+    </form>
+</body>
+<script type="text/javascript">
+​
+    var btn1 = document.getElementById("btn-1");
+    var btn2 = document.getElementById("btn-2");
+    var btn3 = document.getElementById("btn-3");
+    var btn4 = document.getElementById("btn-4");
+​
+    btn1.onclick = function(){
+        document.getElementById("respuesta").innerHTML = "Incorrecto";
+    }
+​
+    btn2.onclick = function(){
+        document.getElementById("respuesta").innerHTML = "Incorrecto";
+    }
+​
+    btn3.onclick = function(){
+        document.getElementById("respuesta").innerHTML = "Incorrecto";
+    }
+
+    btn4.onclick = function(){
+        document.getElementById("respuesta").innerHTML = "Incorrecto";
+    }
+​
+</script>
+</html>

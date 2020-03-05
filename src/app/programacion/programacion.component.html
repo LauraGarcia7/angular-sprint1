@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Generador de Equipos</title>
+​
+</head>
+<body style="margin-left: 100px; margin-top: 30px;">
+    <form action="registro">
+    <h1>Programacion</h1>
+    <p> if, else, for y while son:</p>
+    <hr>
+    <div class="btn-group">
+        <button type="button" class="btn btn-outline-success" id="btn-1" style="right: 5px; margin-top: 8px;" onclick="prueba()">a) Funciones de acceso a datos</button>
+    </div><br>
+    <div class="btn-group">
+        <button type="button" class="btn btn-outline-success" id="btn-2" style="right: 5px; margin-top: 8px;">b) Sentencias de control</button>
+    </div><br>
+    <div class="btn-group">
+        <button type="button" class="btn btn-outline-success" id="btn-3" style="right: 5px; margin-top: 8px;">c) Tipos de datos</button>
+    </div><br>
+    <div class="btn-group">
+        <button type="button" class="btn btn-outline-success" id="btn-4" style="right: 5px; margin-top: 8px;">d) Las anteriores respuestas no son correctas</button>
+    </div><br>  
+    
+    <!--Si se quiere colocar una imagen como botón
+        <button type="button" class="btn btn-primary" style="right: 5px; margin-top: 8px; background:url(pruebita.jpg); height: 528px; width: 793px;"></button>
+    -->
+​
+    <h3 id="respuesta" style="margin-left: 120px; margin-top: 10px;"></h3>
+    </form>
+</body>
+<script type="text/javascript">
+​
+    var btn1 = document.getElementById("btn-1");
+    var btn2 = document.getElementById("btn-2");
+    var btn3 = document.getElementById("btn-3");
+    var btn4 = document.getElementById("btn-4");
+​
+    btn1.onclick = function(){
+        document.getElementById("respuesta").innerHTML = "Incorrecto";
+    }
+​
+    btn2.onclick = function(){
+        document.getElementById("respuesta").innerHTML = "Correcto";
+    }
+​
+    btn3.onclick = function(){
+        document.getElementById("respuesta").innerHTML = "Incorrecto";
+    }
+​
+    btn4.onclick = function(){
+        document.getElementById("respuesta").innerHTML = "Incorrecto";
+    }
+​
+</script>
+</html>
